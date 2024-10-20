@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+       
+    </head>
+
+    <body>
+        <!-- Simple HTML tags-->
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+        <!-- HTML heading tags-->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+
+        <!-- HTML links-->
+        <h1>HTML Links</h1>
+
+        <p><a href="https://iiits.in/">Visit IIIT-Sri City!</a></p>
+
+        <!-- The target attribute specifies where to open the linked document.
+
+        The target attribute can have one of the following values:
+
+        _self - Default. Opens the document in the same window/tab as it was clicked
+        _blank - Opens the document in a new window or tab
+        _parent - Opens the document in the parent frame
+        _top - Opens the document in the full body of the window -->
+       
+        <h2>The target Attribute</h2>
+        <a href="https://iiits.in/" target="_blank">Visit IIIT-Sri City!</a> 
+
+
+        <h1>Hyper links</h1>
+        <a href=".\Images\IIITS_Logo.png">Click here</a>
+
+        <!-- HTML Image tag-->
+        <h1>HTML images</h1>
+        <img src=".\Images\IIITS_Logo.png" alt="IIITS Logo" />
+        
+        <!-- HTML Image Map-->
+
+        <img src="Images\imageMap.jpg" alt="Workplace" usemap="#workmap">
+
+        <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html">
+        </map>
+
+        
+
+         <!-- HTML Picture Element-->
+         
+        <!--The <picture> element contains one or more <source> elements, 
+            each referring to different images through the srcset attribute. 
+            This way the browser can choose the image that best fits the 
+            current view and/or device.-->
+
+        <picture>
+            <source media="(min-width: 650px)" srcset="Images\Flower1.jpg" width="100px" height="100px">
+            <source media="(min-width: 550px)" srcset="Images\Flower2.jpg">
+            <img src="Images\Flower3.jpg">
+        </picture>
+
+        <!-- Media attribute values-->
+        <!-- https://www.w3schools.com/tags/att_source_media.asp-->
+
+        <p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+                The browser looks for the first source element where the media query matches the user's current viewport width,
+                and fetches the image specified in the srcset attribute.
+        </p>
+                
+        <p>The img element is required as the last child tag of the picture declaration block.
+                The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+                
+        </p> 
+
+        <!-- HTML favicon-->
+
+        <!-- A favicon image is displayed to the left of the page title in the browser tab-->
+        <!-- To be added in head section-->
+        <!--
+        <link rel="icon" href="/images/favicon.ico">
+        -->
+
+
+        <!-- HTML Formatting options-->
+         <p> This paragraph has <b> bold</b> text <strong> strong </strong>text. <br>
+            <em>This is emphasized</em> <small><del>This small text is deleted</del></small> <br>
+            <big><ins>and instead we have big text</ins></big>
+            <q></q>Number of subsets of finite set is 2<sup>n</sup> where <i>n</i> is the cardinality of the set.
+        </p>
+
+        <!-- HTML Quotation options-->
+        <!-- The HTML <blockquote> element defines a section that is quoted from another source.
+            Browsers usually indent <blockquote> elements.-->
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>            
+        <!-- q: Browsers normally insert quotation marks around the quotation-->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+
+
+        <!-- HTML Tables -->
+        <h1>Tables</h1>
+        <table border="1">  
+        <caption><b>Student Details</b></caption>
+        <tr>    <th>First_Name</th> <th>Last_Name</th>  <th>Marks</th></tr>  
+        <tr>    <td>Frodo</td>      <td>Baggins</td>    <td>90</td></tr>  
+        <tr>    <td>Bilbo</td>      <td>Baggins</td>    <td>95</td></tr>  
+        <tr>    <td>Sam</td>        <td>Gamgee</td>     <td>92</td></tr>  
+        <tr>    <td>Peregrin</td>   <td>Took</td>       <td>86</td></tr>  
+        </table>  
+
+        <table border="1">  
+        <tr>  
+            <th>Name</th>  
+            <th colspan="2">Mobile No.</th>  
+        </tr>  
+        <tr>  
+            <td>Bilbo</td>  
+            <td>7503520801</td>  
+            <td>9555879135</td>  
+        </tr>  
+        </table>  
+
+        <table border = "2">    
+        <tr>    <th bgcolor="green">Name</th>                   <td>Bilbo</td></tr>    
+        <tr>    <th rowspan="2" bgcolor="green">Mobile No.</th> <td>7503520801</td></tr>    
+        <tr>    <td>9555879135</td></tr>    
+        </table>   
+
+        
+        <!-- HTML Unordered Lists-->
+        <ul type="disc">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul> 
+           
+           
+           <ul type="circle">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul>  
+           
+           <ul type="square">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul>  
+           
+           <ul type="none">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ul>  
+
+           
+         <!-- HTML Ordered Lists-->
+
+         <ol>  
+            <li>Mango</li>  
+            <li>Banana</li>  
+            <li>Orange</li>  
+            <li>Apple</li>  
+           </ol> 
+            
+           <!-- Ordered Lists type attribute-->
+           <ol type="I">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ol>  
+           
+           <ol type="i">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ol>  
+           
+           <ol type="A">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ol>  
+           
+           
+           <ol type="a">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ol>  
+           
+           <!-- Start attribute-->
+           <ol type="i" start="5">  
+            <li>HTML</li>  
+            <li>Java</li>  
+            <li>JavaScript</li>  
+            <li>SQL</li>  
+           </ol>  
+
+        <!--HTML Description Lists-->
+        <dl>  
+            <dt>IIIT Sri City</dt>  
+                <dd>-It is an Educational Organization.</dd>  
+            <dt>Bharat Biotech</dt>  
+                <dd>-It is a Pharma Company in India.</dd>  
+            <dt>Flipkart</dt>  
+                <dd>-It is India's biggest online store.</dd>  
+            <dt>Oracle</dt>  
+                <dd>-It is a multinational technology corporation.</dd>   
+        </dl>
+
+        <!--Nested List-->
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+              <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+              </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+
+
+
+
+
+        <!-- Block level and Inline Elements-->
+        <!-- A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.-->
+        <!-- A block-level element always takes up
+             the full width available 
+             (stretches out to the left and right as far as it can).-->
+        <!-- Example <p> and <div>-->
+            <p>adjslfkjklsdf
+                <span>slkdjflk
+                    lksjdflk
+                </span>sldanflk
+                ksjdahflk
+            </p>
+
+        <!--An inline element does not start on a new line. 
+            An inline element only takes up as much width as necessary.-->
+        <!-- Example <span>-->
+
+
+
+        <!-- HTML IFrames-->
+
+        <!-- An HTML iframe is used to display a web page within a web page.-->
+
+        <iframe src="index.html" title="web tutorial"></iframe>
+        <iframe src="https://iiits.in/" style="border:none;" title="Iframe Example" height="200px" width="300 px"></iframe>
+
+        <iframe src="https://iiits.in/" name="iframe_a" title="Iframe Example"></iframe>
+        <p><a href="index.html" target="iframe_a">W3Schools.com</a></p>
+
+
+        <!-- HTML5 new Semantic Elements-->
+
+        <!--section-->
+        <section>
+            <h1>WWF</h1>
+            <p>The World Wide Fund for Nature (WWF) is....</p>
+        </section>
+        
+        <!--article-->
+        <article>
+            <h1>What Does WWF Do?</h1>
+            <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+        </article>
+        
+        <!--header-->
+        <article>
+            <header>
+            <h1>What Does WWF Do?</h1>
+            <p>WWF's mission:</p>
+            </header>
+            <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+        </article>
+        
+        <!--footer-->
+        <footer>
+            <p>Posted by: Hege Refsnes</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+            someone@example.com</a>.</p>
+        </footer>
+        
+        <!--nav-->
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+        
+        <!--aside-->
+        <p>My family and I visited The Epcot center this summer.</p>
+        
+        <aside>
+            <h4>Epcot Center</h4>
+            <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+        </aside>
+        
+        <!--figure and figcaption-->
+        <figure>
+            <img src="pic_mountain.jpg" alt="The Pulpit Rock" width="304" height="228">
+            <figcaption>Fig1. - The Pulpit Rock, Norway.</figcaption>
+        </figure>
+  
+  
+        
+
+
+
+
+
+
+
+
+    </body>
+</html>

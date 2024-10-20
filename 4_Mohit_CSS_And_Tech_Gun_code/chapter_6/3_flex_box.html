@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+    <style>
+        .container{
+            background-color: indianred;
+            display: flex;
+            /*flexbox ke use se hum bina float aur position ke use kiye bina website bana sakte hai */
+            /*jitna kam display:flex; box se asani se kar sakte hai utna asani se display: inline-block se nahi kar sakte hai*/
+            /*jab kisi container per display: flex; lagte hai to us container ke ander ka sara item i.e childern flexible ho jata hai, us item se strictness nahi rahega*/
+        }
+          .box1{
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+          
+        }
+        .box2{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            border: 2px solid black;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">one</div>
+        <div class="box2">two</div>
+        <div class="box2">three</div>
+        <div class="box2">four</div>
+    </div>
+    
+</body>
+</html>

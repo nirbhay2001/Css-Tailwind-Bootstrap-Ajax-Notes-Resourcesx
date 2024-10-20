@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+     <style>
+       
+        /* ye styling karne ka pahla tarika hai */
+
+        #first{
+        /* # (has)--> esase id ko target karte hai aur .(dot) se class ko target karte hai */
+        background-color: aqua;
+       }  
+
+       .bg-blue{
+        background-color: blue;
+        color: white;
+        /* color --> se like huye content kewal white hoga */
+       }
+    </style> 
+</head>
+<body>
+    <div id="first" style="background-color:aqua">
+        first
+       <!-- div#first se esko likhate hai  -->
+       <!-- eske ander ka content seperate hoga jiska id first hoga, eska content dusre div ke content se matlab nahi rakhega -->
+    </div>
+    <div id="second">
+        second
+        <!-- ye ak element hai -->
+        <!-- div#second se esko likhate hai  -->
+               <!-- eske ander ka content seperate hoga jiska id second hoga, eska content dusre div ke content se matlab nahi rakhega -->
+    </div>
+    <section class = "red">
+        <!-- ye bhi ak element hai -->
+        <!-- do ya do se adhik element ka class same ho sakta hai lekin id same nahi ho sakta hai -->
+        <p>My name is Nirbhay Gupta</p>
+    </section>
+    <section class="red bg-blue border-purple">
+        red bg blue and border purple
+    </section>
+    
+    
+</body>
+</html>

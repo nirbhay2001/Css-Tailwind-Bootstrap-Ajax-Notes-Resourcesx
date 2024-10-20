@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+         .container{
+            background-color: red;
+            height: 455px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+             /* transform: translate(134px,56px); 
+             transform-origin: 0;  */
+          
+            /* transform: rotateX(45deg); */
+             /* transform: rotateY(45deg);  */
+            /* transform: rotateZ(45deg); */
+        }
+        img{
+            width: 455px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+         img:hover{
+            width: 56px;
+        } 
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://source.unsplash.com/960x120/?nature,water" alt="image">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+div>p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>Styling a link depending on state</h2>
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+<div>Hover over this div element to show the p element
+    <p class="show">Tada! Here I am!</p>
+  </div>
+
+<!--
+    selector        Example         Purpose
+    :active	        a:active	    Selects the active link
+    :enabled	    input:enabled	Selects every enabled <input> element
+    :first-child	p:first-child	Selects every <p> elements that is the first child of its parent
+    :nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+    :not(selector)	:not(p)	        Selects every element that is not a <p> element
+    :required	    input:required	Selects <input> elements with a "required" attribute specified
+-->
+  
+</body>
+</html>
+
+

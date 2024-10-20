@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            height: 600px;
+            background-color: yellow;
+            grid-row-gap: 9px;
+             grid-column-gap: 9px; 
+            
+            grid-template-columns: 200px 300px 200px;
+            /*grid-template-columns: 200px 300px 200px; esase conatainer ke sare column container ke height ko by default occupy kar le rahe hai; yadi hum apne man se column ki height set karna chahe to align-content property se kar sakte hai*/
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: center; */
+            /* align-content: space-around; */
+            align-content: space-between;
+            /*align-content: start; esase unta hi height leta hai jitna content ko height diya gaya jhai;align-content verically and justify-content horizontally kam karta hai*/
+            justify-content: space-evenly;
+
+         
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid red;
+            font-size: 40px;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="grid-1">1</div>
+        <div class="item" id="grid-2">2</div>
+        <div class="item" id="grid-3">3</div>
+        <div class="item" id="grid-4">4</div>
+        <div class="item" id="grid-5">5</div>
+        <div class="item" id="grid-6">6</div>
+        <div class="item" id="grid-7">7</div>
+        <div class="item" id="grid-8">8</div>
+        <div class="item" id="grid-9">9</div>
+    </div>
+</body>
+</html>

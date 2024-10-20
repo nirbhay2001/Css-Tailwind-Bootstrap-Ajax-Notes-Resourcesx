@@ -1,0 +1,20 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.red{
+    /* background: red;
+     color: white;  */
+     /* rgb ka matlab hai ki red,green,blue esame red ki amount 16,green ki amount 4 and blue ki amount 4 hai */
+     background: rgba(16, 4, 4, 0);
+     height: 232px;
+     /* height :232 wrong hai esase height nahi color ki increse karegi */
+     /* esme 0 alph ki value represent karata hai alph ki value lightness and darkness ko represent karata karta hai */
+     /* alpha ka use karana hai to hame rgb me a add karana padega i.e rgba */
+     color: aqua;
+}
+
+.green{
+     background: green; 
+     color: aqua;
+}

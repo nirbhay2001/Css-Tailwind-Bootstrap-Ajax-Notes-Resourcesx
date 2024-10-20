@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #overflow{
+            background-color: whitesmoke;
+            border: 1px solid red;
+            width: 500px;
+            height: 100px;
+            /* overflow: visible; */
+
+            /* overflow: visible; // ye property bydefault hota hai */
+
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+
+            /* overflow: auto; // box se jab content jyada rahega to scroll bar le lega lekin jab content box se kam rehega to scroll bar nahi lega */
+
+            overflow: auto;
+
+            /* resize: horizontal; */
+            /* resize: vertical; */
+            resize: both;
+
+            /* resize ka use block element per use karte hai aur jab overflow hidden, sroll, auto ho to es case me use kar sakte hai lekin jab overflow jab visible ho to us case me esaka use nahi kar sakte hai */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- overflow block element per kam nahi karta hai -->
+    <div id="overflow">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repellendus ad accusantium error non vero fugiat perspiciatis autem, suscipit vel consectetur fugit iusto ratione ut odit laboriosam harum. Aliquid quisquam ipsam iure, atque vel doloribus autem commodi officia culpa magni qui blanditiis, modi delectus? Temporibus, iure non dolores nam mollitia consequatur beatae reprehenderit fugit quas natus? Natus officiis numquam deleniti. Nemo dolor aut voluptate, ullam dignissimos tempora, voluptates magni corrupti ipsam illo deserunt velit nihil omnis consequatur dolores qui, quasi perferendis eum! Exercitationem magni placeat delectus laudantium omnis nostrum iure!</p>
+    </div>
+</body>
+</html>

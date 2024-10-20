@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+       #div1{
+        width: 70%;
+        float: left;
+        background-color: lawngreen;
+       }
+       #div2{
+        width: 30%;
+        float: left;
+        background-color: rosybrown;
+       }
+       h1{
+        font-size: 40px;
+       }
+       @media screen and (max-width:800px){
+            body{
+                background-color: brown;
+
+                /* eska matlab hai ki jab screen ka width 800px se kam rahta hai to uska screen yellow ho jayega */
+            }
+           #div1{
+            width: 50%;
+           }
+           #div2{
+            width: 50%;
+           }
+
+           /*jab bhi browser ki width 800px se niche hoga to div1 and div2 ki width 50-50 % ho jayega*/
+
+            
+       }
+       @media screen and (max-width:400px){
+           
+           #div1{
+            width: 100%;
+           }
+           #div2{
+            width: 100%;
+            color: white;
+            background-color: black;
+           }
+        }
+
+        @media screen and (max-width:400px) and (max-width: 768px){
+           
+           #div1{
+            width: 100%;
+           }
+           #div2{
+            width: 100%;
+            color: white;
+            background-color: black;
+           }
+
+           /*jab screen ka size 400px se jayda ho jayega to div1 and div2 per ye condition apply ho jayega*/
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            /*es prakar se ak image ko responsive bana sakte hai*/
+        }
+        video{
+            width: 100%;
+            height: auto;
+              /*es prakar se ak video ko responsive bana sakte hai*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>Div1</h1>
+    </div>
+    <div id="div2">
+        <h1>Div2</h1>
+    </div>
+
+</body>
+</html>

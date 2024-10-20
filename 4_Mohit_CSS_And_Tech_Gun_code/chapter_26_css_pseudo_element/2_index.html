@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            font-size: 35px;
+            color: red;
+        }
+
+        h1::before{
+            content: url(1_image.jpeg);
+        }
+
+        h1::after{
+            content: " added after";
+        }
+
+        /* pseudo element se hum kisi letter ya line ko highlite kar sakte hai aur kisi element me content ko add bhi kar sakte hai us element ke before and after me */
+
+        ::selection{
+            color: red;
+            /* background: yellow; */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum tempore officiis iure minima enim non, voluptates consequatur rerum praesentium nam doloremque adipisci fugit quasi laboriosam nulla ducimus quam repellat. Id atque vel facere accusantium corrupti ut soluta ab adipisci molestias ipsum cum ipsa praesentium eveniet incidunt quibusdam asperiores pariatur porro fugit ea rerum voluptate doloremque, quod voluptatibus? Est ratione vero harum voluptatum ab, veritatis laboriosam quisquam laudantium nisi in porro vel, exercitationem repellat et veniam reprehenderit totam ullam. Veniam ducimus obcaecati iure eveniet sint repellat ratione maxime modi, exercitationem perferendis atque excepturi, commodi repellendus nam optio facilis architecto fuga earum.</p>
+</body>
+</html>

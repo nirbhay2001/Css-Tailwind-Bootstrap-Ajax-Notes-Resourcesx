@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div>
+        <h1>Travel Form for trip</h1>
+        <form action="form.php">
+        <!-- yaha placeholder ak attributes hai -->
+        <!-- id unique identifier hota hai -->
+        <!-- yaha per name ka use isliye huya hai ki jo bhi element ka nam denge jab vah bancked me jayega to vah koun sa element hai bancked name se hi pahchanata hai -->
+
+        <input type="text" placeholder="Enter Your Name"><br>
+        <label for="sectionida"><br>
+        <input type="radio" value="Section a" name="section" id="sectionida">section A
+        </label>
+        <label for="sectionidb"><br>
+        <input type="radio" value="Section b" name="section" id="sectionidb">section B
+    </label>
+    <label for="sectionidc"><br>
+        <input type="radio" value="Section c" name="section" id="sectionidc" class="red blue">section C
+    </label><br>
+    <input type="checkbox"  id="foodcanteen" class="red" name="canteen">
+    <label for="foodcanteen">Want Food canteen card</label><br>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
+    <!-- textarea ka use page per kuchh likhane ke liye kiya jata hai i.e review likhane ke liye kiya jata hai -->
+    <textarea name="explain" id="explain" cols="30" rows="10"></textarea><br>
+    <!-- select ka use option ko choose karne ke liye kiye jata hai -->
+    <!-- select keye huye data ko backend me bheja jata hai -->
+    <select name="car" id="car">select your car
+        <option value="no car">select your car</option>
+        <option value="omni1">omni1</option>
+        <option value="omni2">omni2</option> 
+        <option value="Dzire">Dzire</option>
+        <option value="i10">i10</option>
+        <option value="i20">i20</option>
+    </select>
+    </form>
+    </div>
+</body>
+</html>

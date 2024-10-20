@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="icon" href="Images\IIITS_Logo.png">
+       
+    </head>
+
+    <body>
+        <!-- Simple HTML tags-->
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+        <!-- HTML heading tags-->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+
+        <!-- HTML links-->
+        <h1>HTML Links</h1>
+
+        <p><a href="https://iiits.in/">Visit IIIT-Sri City!</a></p>
+
+        <!-- The target attribute specifies where to open the linked document.
+
+        The target attribute can have one of the following values:
+
+        _self - Default. Opens the document in the same window/tab as it was clicked
+        _blank - Opens the document in a new window or tab
+        _parent - Opens the document in the parent frame
+        _top - Opens the document in the full body of the window -->
+       
+        <h2>The target Attribute</h2>
+        <a href="https://iiits.in/" target="_blank">Visit IIIT-Sri City!</a> 
+
+
+        <h1>Hyper links</h1>
+        <a href=".\Images\IIITS_Logo.png"><img src="Images/IIITS_Logo.png"></a>
+
+        <!-- HTML Image tag-->
+        <h1>HTML images</h1>
+        <img src=".\Images\IIITS_Logo.png" alt="IIITS Logo" />
+        
+        <!-- HTML Image Map-->
+
+        <img src="Images\imageMap.jpg" alt="Workplace" usemap="#mymap">
+
+        <map name="mymap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html">
+        </map>
+
+        
+
+         <!-- HTML Picture Element-->
+         
+        <!--The <picture> element contains one or more <source> elements, 
+            each referring to different images through the srcset attribute. 
+            This way the browser can choose the image that best fits the 
+            current view and/or device.-->
+
+        <picture>
+            <source media="(min-width: 650px)" srcset="Images\Flower1.jpg" width="100px" height="100px">
+            <source media="(min-width: 550px)" srcset="Images\Flower2.jpg">
+            <img src="Images\Flower3.jpg">
+        </picture>
+
+        <!-- Media attribute values-->
+        <!-- https://www.w3schools.com/tags/att_source_media.asp-->
+
+        <p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+                The browser looks for the first source element where the media query matches the user's current viewport width,
+                and fetches the image specified in the srcset attribute.
+        </p>
+                
+        <p>The img element is required as the last child tag of the picture declaration block.
+                The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+                
+        </p> 
+
+
+        <!-- HTML Formatting options-->
+        <p> This paragraph has <b> bold</b> text <strong> strong </strong>text. <br>
+            <em>This is emphasized</em> <small><del>This small text is deleted</del></small> <br>
+            <big><ins>and instead we have big text</ins></big>
+            <q></q>Number of subsets of finite set is 2<sup>n</sup> where <i>n</i> is the cardinality of the set.
+        </p>
+
+        <!-- HTML Quotation options-->
+        <!-- The HTML <blockquote> element defines a section that is quoted from another source.
+            Browsers usually indent <blockquote> elements.-->
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>            
+        <!-- q: Browsers normally insert quotation marks around the quotation-->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+          <!-- HTML Tables -->
+          <h1>Tables</h1>
+          <table border="1">  
+          <caption><b>Student Details</b></caption>
+          <tr>    <th>First_Name</th> <th>Last_Name</th>  <th>Marks</th></tr>  
+          <tr>    <td>Frodo</td>      <td>Baggins</td>    <td>90</td></tr>  
+          <tr>    <td>Bilbo</td>      <td>Baggins</td>    <td>95</td></tr>  
+          <tr>    <td>Sam</td>        <td>Gamgee</td>     <td>92</td></tr>  
+          <tr>    <td>Peregrin</td>   <td>Took</td>       <td>86</td></tr>  
+          </table> 
+    </body>
+</html>

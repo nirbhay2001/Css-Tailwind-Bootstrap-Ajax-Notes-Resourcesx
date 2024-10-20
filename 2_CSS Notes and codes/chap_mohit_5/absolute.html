@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        li{
+            display: inline;
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+            /* position: sticky; jisame ye laga rahata hai usko stop kar deta hai aur dusare class ka element scroll hone lagta hai */
+             position: sticky; 
+            top: 0px;
+            /* z-index: 1; z-index ka vlue jisaka adhik hota hai wah upper ata hai */
+              z-index: 1; 
+        
+        }
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            padding: 0 34px;
+            z-index: 10;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: rosybrown;
+            /* position: relative; esako use karane se state (top,bottom,left,right,g) property kam karane lagega, jab esako use nahi karenge to ye property use nahi hoga because wah stastic hoga */
+             /* position: relative;  */
+             /* position:absolute; esako use karane se box jis claas ke ander rahega box usi class ko apna first parent manega ye usi class ke anusar shift ho hoga i.e us class se bahar nahi jayega,ye html ke anusar nahi chalega */
+             /* position:absolute; */
+             /* position: fixed;  esase kisi elememnt ko fixed kar sakate hai ye jaha per rahta hai ye wahi per rah jata hai */
+              /* position: fixed;   */
+               
+          
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            /* position: relative; */
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About </li>
+            <li>Contact</li>
+          </ul>  
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quod quaerat, illum temporibus numquam quidem totam. Sunt asperiores sapiente alias nobis, harum quos soluta consequuntur ut ipsam voluptas rem earum.</p>
+        <div class="box">I am box</div>
+        <div class="box2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eum architecto labore omnis officia! Expedita, sed nemo atque doloremque quod iusto voluptatem iste neque consectetur magnam dolorem eum qui sunt cum iure, rem facilis.
+        </div>
+    </div>
+</body>
+</html>

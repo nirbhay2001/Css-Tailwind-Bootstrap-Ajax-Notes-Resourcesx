@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        h1{
+            /* esase dono h1 color hoga  */
+            /* esi ko element selector bolte hai, esase h1,h2,h3, div,paragraph,span,ul,nav,main,select ko select karke unpe css ka rule laga  sakte hai */
+            color: red
+        }
+        div{
+            background-color: antiquewhite;
+        }
+        #red,h3{
+            /* eska matlab hai class red wala ke sath hi h3 ko bhi color kar do ese group selectors bolte hai */
+            /* es prakar se ak paricular div ko colar kar sakte uske id se */
+            color: white;
+            background-color: navy;
+        }
+        P.blue{
+                /* eska matlab hai ki us sara paragraph ko color kar do jiska class blue hai, p --> paragraph,.--> class , blue--> jo class blue hai */
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+        } 
+        .blue{
+
+            /* p.blue and .blue dono me bahut hi anter hai , .blue un sare div,span,header,paragraph ko color kar dega jiska class blue hai lekin p.blue kewal paragraph ko hi colr karega jiska class blue hai  */
+
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>This is my CSS Selector page</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam nam dolore atque ipsum hic dolorum voluptatem reprehenderit neque! Ullam, beatae sapiente. Obcaecati, est provident. Doloribus deserunt saepe assumenda nostrum?
+        <h1>This is another h1</h1>
+        <div id="red">bg is red</div>
+        <span class="blue">first tag</span>
+        <span class="blue">second tag</span>
+        <span class="blue">third tag</span>
+        <h3>I am h3</h3>
+        <p class="blue">my name is nirbhay gupta</p>
+        <p class="blue">my name is mohit gupta</p>
+    </div>
+</body>
+</html>

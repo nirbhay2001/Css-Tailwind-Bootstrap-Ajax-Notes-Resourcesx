@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Ajax in one video</title>
+  </head>
+  <body>
+    
+    <h1>Ajax tutorial</h1>
+    <button type="button" class="btn btn-primary" id="fetchBtn">Fetch Data</button>
+
+    <button type="button" class="btn btn-secondary" id="popBtn">Populate</button>
+
+    <div class="container">
+        <h1>Employee list</h1>
+        <ul id="list">
+
+        </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        let fetchBtn = document.getElementById('fetchBtn');
+        fetchBtn.addEventListener('click',buttonClickHandler)
+
+        function buttonClickHandler(){
+            console.log('You have clicked the fetchBtn...');
+            // Instantiate an xhr object
+            const xhr = new XMLHttpRequest();
+
+            // use this for post request
+            xhr.open('POST','http://dummy.restapiexample.com/api/v1/create',true);
+            xhr.getResponseHeader('Content-type','application/json');
+           
+
+            // what to do on progress (optional)
+            xhr.onprogress = function(){
+                console.log('On Progress');
+            }
+
+            // xhr.onreadystatechange = function(){
+            //     console.log('ready state is ',xhr.readyState);
+            // }
+
+            // what to do when response is ready
+            xhr.onload = function(){
+                if(this.status === 200){
+                    console.log(this.responseText);
+                }else{
+                    console.error('Some error occured');
+                }
+                
+            }
+            // send the request
+            params = `{"name":"test2345878768","salary":"123","age":"23"}`;
+            xhr.send(params);
+        }
+
+        let popBtn = document.getElementById('popBtn');
+        popBtn.addEventListener('click',popHandler);
+        function popHandler(){
+            console.log('You have clicked the pop Handler...');
+            // Instantiate an xhr object
+            const xhr1 = new XMLHttpRequest();
+
+            // open the object
+            xhr1.open('GET','https://dummy.restapiexample.com/api/v1/employees',true);
+
+            // what to do when response is ready
+            xhr1.onload = function(){
+                if(this.status === 200){
+                    let obj = JSON.parse(this.responseText);
+                    console.log(obj);
+                    let list = document.getElementById('list');
+                    str = " ";
+                    for(key in obj){
+                        str += `<li>${obj[key].employee_name} </li>`;
+                    }
+                    list.innerHTML = str;
+                }else{
+                    console.error('Some error occured');
+                    
+                }
+                
+            }
+            // send the request
+            xhr1.send();
+            console.log("We are done fetching employee!")
+        }
+    </script>
+    
+  </body>
+</html>

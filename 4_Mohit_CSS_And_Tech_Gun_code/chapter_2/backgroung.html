@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 334px;
+            height: 344px;
+            /* ye height and width pure container class ke liye hai,i.e pure pure div tag ke liye hai */
+             background-color: blueviolet; 
+            border: 2px solid red;
+            background-image: url("index.jpg");
+            /* background-repeat and background-size ye dono background ke image ke liye property hai */
+            background-repeat: no-repeat;
+            /* background-size: contain; */
+            /* background-size: cover; */
+            background-size: 233px 455px;
+            /* background-size: 233px 455px; esase image ka aspect ratio kharab ho jata hai */
+            color: white;
+            /* background-color: rgb(39, 122, 122);
+            color: white; */
+
+            /* url css ka ak function hai jo external value ko leta hai */
+/* 
+            esase image wahi tak lagega container jis tag ka class hai, esase kewal div tag per hi image lagega  */
+            /* background-image: url("index.jpg"); */
+
+        }
+        body{
+            /* esase pure body per hi image lag jayega */
+            /* background-image: url("index.jpg"); */
+            /*
+             background-repeat: repeat-x; 
+
+                 repeat-x se kewal horizontal me hi image repeat karega , vertical me ignore karega
+            */
+
+            /*
+             background-repeat: repeat-y; 
+
+                 repeat-y se kewal vertical me hi image repeat karega , Horizontal me ignore karega  
+            */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: space; */
+            /* background-repeat: round; */
+
+        }
+        body{
+            /* height:344px; */
+            /* background-image: url("index.jpg");
+            background-repeat: no-repeat;
+            background-size: contain; */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- learn set image in background -->
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas adipisci vel hic mollitia saepe tenetur dolorem eum blanditiis alias earum, laboriosam perferendis cumque nostrum dicta porro, iusto provident aspernatur?
+    </div>
+    
+</body>
+</html>

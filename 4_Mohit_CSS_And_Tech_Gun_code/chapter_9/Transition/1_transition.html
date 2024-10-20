@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 100px;
+            /* transition-property: width; */
+            /* transition-property: background-color; */
+            /* transition-property me ak se jyada value ko bhi de sakte hai */
+           /* transition-property: width, background-color; */
+           transition-property: all;
+            /* transition-duration: 1s; */
+            transition-duration: 50ms;
+        }
+        #div1:hover{
+             width: 200px; 
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

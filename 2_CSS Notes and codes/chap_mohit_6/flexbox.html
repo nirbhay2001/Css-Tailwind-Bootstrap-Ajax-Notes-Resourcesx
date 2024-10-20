@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flot</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content: centre; ye bahut hi important property hai ,ye sare item ko centre me la deta hai */
+            justify-content: centre;
+            background-color: aquamarine;
+            height: 50vh;
+            align-items: center;
+        }
+    .box1{
+        height: 234px;
+        width: 345px;
+        background-color: blue;
+        border: 2px solid black;
+        order: 4;
+        /* align-self: flex-end; jab es property ko jis item per use karate hai wah item khud alag hokar apna jagah le lega, jaise es case me  */
+        align-self: flex-end;
+        flex-grow: 3;
+        
+    }
+    .box2{
+        height: 234px;
+        width: 345px;
+        background-color: red;
+        border: 2px solid black;
+        
+        
+        
+        
+    }
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box2">box3</div>
+        <div class="box2">box4</div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+    <style>
+        .container{
+            background-color: indianred;
+            display: flex;
+            /* flex-wrap: nowrap; */
+             /* flex-direction: row-reverse;  */
+            /* flex-direction: column-reverse; */
+             flex-wrap: wrap; 
+            /* flex-wrap: wrap-reverse; */
+
+            /*flex-wrap: nowrap;esase container ka koi element ak hi line me aayega , element apne size ko chhota kar lega per dusre line me nahi jayega, yadi elemet ko dusre line me bhejna hai to usko flex-wrap: wrap;  eska use karte hai, esase jitna hum element ko height and width mention kiya hai wah utna hi lega aur baki ke element niche aa jayega, es per height and width ka effect padta hai;  */
+            /*flex-wrap: nowrap; es per height and width ka effect nahi padta hai ye container ke ak line me lane ke liye  ye element ke width ko ghata bhi sakta hai*/
+
+            flex-flow: row wrap;
+            /*flex-flow: row wrap; ye shortcut property hai esme direction aur wrap dono ak hi sath dete hai*/
+        }
+          .box1{
+            height: 100px;
+            width: 150px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 25px;
+            padding: 5px;
+        }
+        .box2{
+            height: 100px;
+            width: 150px;
+            background-color: red;
+            border: 2px solid black;
+            margin: 25px;
+            padding: 5px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box2">box3</div>
+        <div class="box2">box4</div>
+        <div class="box1">box5</div>
+        <div class="box2">box6</div>
+        <div class="box2">box7</div>
+        <div class="box2">box8</div>
+    </div>
+    
+</body>
+</html>

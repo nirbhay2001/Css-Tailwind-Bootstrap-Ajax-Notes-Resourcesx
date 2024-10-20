@@ -1,0 +1,67 @@
+
+<!-- jQuery $.get() method
+The $.get() method requests data from th server with an HTTP GET request.
+syntax:
+$get(URL,callback);
+The required URL parameter specifies the URL you wish to request.
+
+The optinal callback parameter is the name of a function to be executed if the request succeeds.
+
+
+jQuery $.post() method
+The $.post() method requests data from the server using an HTTP POST request.
+
+syntax:
+$.post(URL,data,callback);
+The required URL parameter specifies the URL you wish to request.
+
+The optional data parameter specifies some data to send along with the request.
+
+The optional callback parameter is the name of a function to be executed if the request succeeds. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/lib/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p id="changehere"> This line is going to be change... </p>
+        <button class="btn btn-primary btnclick"> Click </button>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.btnclick').click(function(){
+                $.get('04_get.html',function(data,status){
+                    $('#changehere').html(data);
+                    alert(status);
+                });
+            });
+        });
+
+
+        $(document).ready(function(){
+            $('.btnclick').click(function(){
+                $.post('post.php',{
+
+                    name : "ThapaTechnical",
+                    subs : "subscribe"
+
+                },function(data,status){
+                    $('#changehere').html(data);
+                    alert(status);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

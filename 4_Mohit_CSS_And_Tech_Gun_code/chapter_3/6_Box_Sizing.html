@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+      .box1{
+        background-color: red;
+        margin: 30px;
+        height: 2320px;
+        width: 233px;
+        border: 6px solid black;
+      }
+      .box2{
+        background-color: aqua;
+        /* margin: 20px; */
+        height: 20px;
+        width: 100%;
+        padding: 2px;
+        border: 5px solid grey;
+        box-sizing: border-box;
+        /* yadi hum child element ko border box nahi karenge to ye parent element se bahr aa jayega, esliye hum child element ko margin nahi dete hai aur child element ka box sizing border box dete hai, es example me child element box2 hai aur parent element box1 hai */
+        /* jab hum box sizing ko border box karte hai to eska matlab hota hai ki width ko 100% kar do padding aur border ko milakar */
+        /* border box kahta hai kisi bhi content ka height and width 100% hai border and padding milakar */
+        /* jo hum content ki size dete hai usme padding aur border ka size usme nahi rahta hai lekin jab hum jis content ke box size ko border box bana dete hai uske content ke size me hi padding aur border ka size include rahta  */
+      }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia error nisi exercitationem fugiat cumque obcaecati cum fugit quibusdam placeat repudiandae molestiae nemo accusamus, recusandae maxime. Id soluta eligendi officiis.
+        <div class="box2"></div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+    <style>
+        .container{
+            height: 50vh;
+            display: flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+          .box1{
+            height: 100px;
+            width: 120px;
+            background-color: blue;
+            border: 2px solid black;
+           
+          
+        }
+        .box2{
+            height: 100px;
+            width: 120px;
+            background-color: red;
+            border: 2px solid black;
+        
+        }
+        #one{
+            order: 2;
+        }
+        #two{
+            order: 4;
+        }
+        #three{
+            order: 1;
+        }
+        #four{
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1" id="one">box1</div>
+        <div class="box2" id="two">box2</div>
+        <div class="box2" id="three">box3</div>
+        <div class="box2" id="four">box4</div>
+    </div>
+    
+</body>
+</html>

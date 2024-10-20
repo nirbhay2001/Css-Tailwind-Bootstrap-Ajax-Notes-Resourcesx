@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+    <style>
+        .container{
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            background-color: aquamarine;
+            
+          
+        }
+          .box1{
+            height: 100px;
+            width: 120px;
+            margin: 30px;
+            padding: 10px;
+            background-color: blue;
+            border: 2px solid black;
+            /*flex-shrink: initial; esko tab use karte hai jab item flex box se overflow karne lagte hai to es case kisi item ko shrink kar sakte hai*/
+          
+        }
+        .box2{
+            height: 100px;
+            width: 120px;
+            margin: 30px;
+            padding: 10px;
+            background-color: red;
+            border: 2px solid black;
+            
+        
+        }
+        #one{
+            flex-shrink: 3;
+            /*flex-shrink: 3; eska matlab hai ki box1 3 guna shrink ho jaye bakiyo se*/
+        }
+        #two{
+            flex-shrink: 2;
+        }
+        #three{
+
+        }
+        #four{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1" id="one">box1</div>
+        <div class="box2" id="two">box2</div>
+        <div class="box2" id="three">box3</div>
+        <div class="box2" id="four">box4</div>
+        <div class="box1" id="five">box5</div>
+        <div class="box2" id="six">box6</div>
+        <div class="box2" id="seven">box7</div>
+        <div class="box2" id="eight">box8</div>
+    </div>
+    
+</body>
+</html>

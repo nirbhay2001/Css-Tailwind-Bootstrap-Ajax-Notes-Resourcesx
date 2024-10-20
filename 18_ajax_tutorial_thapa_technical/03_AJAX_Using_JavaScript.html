@@ -1,0 +1,46 @@
+
+<!-- The XMLHTTPRequest object is used to exchange data with a server.
+To send a request to a server, we use the open() and send() methods of the XMLHTTPRequest object:
+    open(method,url,async) Specifies the type of request
+        method: the type of request: GET or POST
+        url: the server (file) location
+        async: true (asynchronous) or the false (synchronous)
+        send Sends the request to the server (used for GET)
+
+
+AJAX - Server Response
+The readyState property holds the status of the XMLHTTPRequest.
+The onreadystatechange property defines a function to be executed when the readystate changes.
+The status property and the statusText property holds the status of the XMLHTTPRequest object. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/lib/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loaddata">
+            <h3>This is going to be change...</h3>
+        </div>
+        <button class="btn btn-primary" onclick="myfun()"> CHECK </button>
+    </div>
+
+    <script type="text/javascript">
+        var req = new XMLHttpRequest();
+        req.open('GET','03_load.html',true);
+        req.send();
+
+        req.onreadystatechange = function(){
+            if(req.readyState == 4 && req.status == 200){
+                document.getElementById('loaddata').innerHTML = req.responseText;
+            }
+        }
+    </script>
+</body>
+</html>

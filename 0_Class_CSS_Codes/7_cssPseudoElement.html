@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p.intro::first-letter {
+  color: #1900ff;
+  font-size: 200%;
+}  
+h1::before {
+  content: url(Images/icon.png);
+  height: 100px;
+  width: 50px;
+}
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+::selection {
+  color: red;
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<p class="intro">This is an introduction. This is a paragraph with some text. A bit more text even.</p>
+<h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1>
+
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ol>
+
+  
+
+<!--
+    ::after	        p::after	    Insert something after the content of each <p> element
+    ::before	    p::before	    Insert something before the content of each <p> element
+    ::first-letter	p::first-letter	Selects the first letter of each <p> element
+    ::first-line	p::first-line	Selects the first line of each <p> element
+    ::marker	    ::marker	    Selects the markers of list items
+    ::selection	    p::selection	Selects the portion of an element that is selected by a user
+-->
+</body>
+</html>

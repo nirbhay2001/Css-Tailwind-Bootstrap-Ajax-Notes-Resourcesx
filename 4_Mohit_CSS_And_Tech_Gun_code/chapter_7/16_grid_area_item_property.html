@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            height: 600px;
+            background-color: yellow;
+            grid-row-gap: 9px;
+             grid-column-gap: 9px; 
+            grid-template-columns: 200px 300px 200px;
+            align-content: space-evenly;
+            justify-content: space-evenly;
+
+         
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid red;
+            font-size: 40px;
+            text-align: center;
+
+        }
+     #grid-5{
+        grid-area: 1/2/4/5;
+        /*grid-area: 1/2/3/4; esase hum row and column ko ak sath merge kar sakte hai; 1/2/3/4 ka matlab hai ki row ke first line aur column ke second line se start karna hai aur row ke third line and column ke fourth line tak jana hai */
+
+        /* another method */
+        grid-area: 1/2span 2/span 3;
+     }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="grid-1">1</div>
+        <div class="item" id="grid-2">2</div>
+        <div class="item" id="grid-3">3</div>
+        <div class="item" id="grid-4">4</div>
+        <div class="item" id="grid-5">5</div>
+        <div class="item" id="grid-6">6</div>
+        <div class="item" id="grid-7">7</div>
+        <div class="item" id="grid-8">8</div>
+        <div class="item" id="grid-9">9</div>
+    </div>
+</body>
+</html>

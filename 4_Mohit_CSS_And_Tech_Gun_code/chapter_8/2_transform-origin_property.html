@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform origin property</title>
+    <style>
+              .container{
+            background-color: red;
+            height: 455px;
+        }
+        .box{
+            border: 2px solid black;
+            transform: translate(34px,56px) rotate(45deg);
+            transform-origin: 0;
+
+            /* transform property ka bahut sara value hota hai, jisko hum MDN Reference per jake dekh sakte hai */
+
+            /*
+            transform: translate(34px); esase box 34px right ki o r shift ho jayega aur 56px niche ki o r aa jayega */
+        }
+    </style>
+</head>
+<body>
+    <!-- Transform origin property esme ak point ke about wah rotate karta hai -->
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio unde, dolorem similique iure id quae perferendis dignissimos consequatur, velit voluptatibus expedita perspiciatis. Autem iure dignissimos, illum nam quisquam temporibus nobis doloremque soluta cumque!</div>
+    </div>
+</body>
+</html>

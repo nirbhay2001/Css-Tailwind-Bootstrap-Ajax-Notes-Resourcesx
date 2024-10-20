@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            padding: 20px;
+            grid-gap: 10px;
+            background-color: yellow;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+
+         
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid red;
+            font-size: 40px;
+            text-align: center;
+            
+
+        }
+        #grid-1{
+            grid-area: header;
+        }
+        #grid-2{
+            grid-area: menu;
+        }
+        #grid-3{
+           grid-area: main; 
+        }
+        #grid-4{
+            grid-area: right; 
+        }
+        #grid-5{
+            grid-area: footer; 
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="grid-1">1</div>
+        <div class="item" id="grid-2">2</div>
+        <div class="item" id="grid-3">3</div>
+        <div class="item" id="grid-4">4</div>
+        <div class="item" id="grid-5">5</div>
+        
+    </div>
+</body>
+</html>

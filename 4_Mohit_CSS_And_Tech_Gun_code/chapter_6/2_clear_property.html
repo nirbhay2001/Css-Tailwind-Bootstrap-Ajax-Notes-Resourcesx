@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+    <style>
+          .box1{
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+            float: right;
+            /* float: left; */
+        }
+        .box2{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            float: right;
+            clear: right;
+            /* clear: both; */
+
+            /*Clear property ka use float property ko clear karne ke liye kiya jata hai*/
+            /*box1 me clear lagakar box2 ko nahi hta sakte hai aisa esliya hota hai ki first float box1 per laga hai jis box per pahle float lagta hai wah pahle claer hota hai; esliye box2 me clear lagakar box1 ko clear kar sakte hai  */
+            /* clear: right;--> eaka matlab hai ki box2 ke right me koi element float nahi karega,lekin easke left me element float kar sakta hai  */
+            /*clear: both;--> easse box2 ke right aur left me koi element float nahi karega*/
+        }
+    </style>
+</head>
+<body>
+     <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+</html>

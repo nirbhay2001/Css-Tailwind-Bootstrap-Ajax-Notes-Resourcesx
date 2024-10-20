@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Position Property Absolute</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+          display: inline;  
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+        }
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            padding: 0px 34px;
+            position: relative; 
+
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+            position: absolute;
+          
+            /* jis element i.e box per position absolute rahta hai wah apana calculation apne positioned parent element se karta hai, yadi uska parent positioned nahi rahta hai to wah uske parent ko check karta hai yadi waha bhi na mile to body se calculation karta hai */
+ 
+            /*
+            jis element i.e box per position absolute laga rahta hai wah apna position turant chhod deta hai
+            */
+
+            /* jab container ka position relative nahi rahta hai to aur es box ka position absolute rahta hai to ye body ke relative move karta hai */
+
+            /*positioned element wahi ho sakta hai  jis  element per position property laga ho except static*/
+            
+          /* ye valid for left 0 , top 0 , bottom 0, right 0 */
+          /*absolute, and fixed position me hame top , bottom, left, right ko dena padta hai yadi nahi denge to ye apna jagah to chhod dega lekin dikhega wahi per aur uske jagah per koi aur aa jayega lekin position relative ke case me top,bottom, left, right ko nahi bhi dete hai to uske niche koi element nahi aata hai kyu ye apna jagah nahi chhodta hai */
+            
+           
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            /* width: 253px; */
+            background-color: rgb(40, 25, 175);
+         
+         
+        }
+    </style>
+</head>
+<body>
+      <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore consequatur sapiente dolorem, impedit quisquam nisi, magni alias autem neque sed consequuntur molestias fugiat cumque omnis magnam! Autem reiciendis assumenda sequi quo sit voluptatem quisquam.</p>
+      <div class="box">
+        I am box
+      </div>
+      <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reiciendis amet debitis odit dignissimos error, hic nemo libero deleniti eum sint eos nobis impedit, dolore qui fugit voluptatibus minima sapiente? Ducimus maxime quasi illo!</div>
+    </div>
+</body>
+</html>

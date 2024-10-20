@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            margin: 20px;
+            background-color: yellow;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 200px auto;
+            /*grid-template-rows: 100px 200px auto; esase hum row ki size ko apne man se de sakte hai*/
+            
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid red;
+             /* margin: 20px;  */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="grid-1">1</div>
+        <div class="item" id="grid-2">2</div>
+        <div class="item" id="grid-3">3</div>
+        <div class="item" id="grid-4">4</div>
+        <div class="item" id="grid-5">5</div>
+        <div class="item" id="grid-6">6</div>
+        <div class="item" id="grid-7">7</div>
+        <div class="item" id="grid-8">8</div>
+        <div class="item" id="grid-9">9</div>
+    </div>
+</body>
+</html>

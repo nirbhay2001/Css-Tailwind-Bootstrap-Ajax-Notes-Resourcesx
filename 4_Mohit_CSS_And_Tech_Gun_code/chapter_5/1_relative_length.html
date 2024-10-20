@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Length</title>
+    <style>
+        html{
+            /* font-size: 45px; */
+        }
+        .container{
+            /* font-size: 4px; */
+
+        }
+        .box{
+            /* font-size: 12px; */
+            /* font-size: 3em; */
+            /* font-size: 3rem; */
+            background-color: red;
+        }
+        .box2{
+            background-color: aqua;
+            /* width: 334px;
+            width: 50vw;
+            height: 50vh; */
+            width: 79%;
+        }
+        /* 3em ka matlab hai ki mere parent ke font size ke tin guna, i.e yaha per box ka parent container hai esliye class box ke ander ka text ka font size 3*34=102px hoga , em --> relative to parent , kisi aur i.e html ke alawa kisi element ke according karna hai to em ka use karenge */
+
+         /* 3rem ka matlab hai ki root(html tag) ke font size ke tin guna, rem --> relative to html tag , esaka use tab karte hai jab hame pure page ko resize karna ho kisi ak particular element ke accoroding i.e html ke according*/
+
+
+    </style>
+</head>
+<body>
+    Hi Nirbhay Gupta
+    <div class="container">
+        <p>This is a paragraph</p>
+        <div class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, id. Praesentium recusandae ad ullam tenetur accusantium voluptatum saepe delectus sequi, ducimus omnis dignissimos voluptate veniam iure quisquam maxime quo nostrum mollitia quaerat dolores in?
+        </div>
+        <div class="box2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis atque laborum aliquam.
+        </div>
+    </div>
+</body>
+</html>
